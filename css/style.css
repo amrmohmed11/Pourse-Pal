@@ -1,0 +1,169 @@
+body {
+  min-height: 500em;
+  background-color: #f7f7f7;
+}
+:root {
+  --lato-font: "Lato", sans-serif;
+  --lora-font: "Lora", serif;
+  --Roboto-font: "Roboto", sans-serif;
+  --main-color: #007674;
+  --background-button: #e4f1f1;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body > .container:nth-child(odd) {
+  background: #f8fbfb;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+/* up button */
+.up {
+  width: 3rem;
+  height: 3rem;
+  background: var(--main-color);
+  position: fixed;
+  right: -50%;
+  bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+.up svg {
+  color: #fff;
+  font-size: 1rem;
+}
+.show {
+  right: 0.5rem;
+}
+/* navbar */
+.navbar {
+  background-color: #fff !important;
+}
+.navbar-collapse .navbar-nav {
+  position: absolute;
+  right: 1% !important;
+}
+.nav-link {
+  text-transform: capitalize !important;
+  font-weight: 400;
+  color: black !important;
+  margin: 0 0.5rem;
+  font-family: var(--Roboto-font);
+  padding: 0.5rem 1.5rem !important;
+}
+.navbar-brand {
+  margin-left: 1rem !important;
+  font-family: var(--lato-font);
+  font-weight: 700;
+}
+.Pal {
+  color: var(--main-color);
+}
+.nav-link:hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+.get-start {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.nav-ac {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+/* start home */
+.container .home {
+  position: relative;
+  min-height: 50rem;
+  background-image: url("../img/pexels-tima-miroshnichenko-7046718.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .home .home-dec {
+  width: 25rem;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  text-transform: capitalize;
+}
+.container .home .home-dec h1 {
+  font-size: 2rem;
+  font-family: var(--Roboto-font);
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #fff;
+}
+.container .home .home-dec h2:nth-child(1) {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.container .home .home-dec h2 {
+  font-size: 0.8rem;
+  color: #fff;
+}
+/* end home */
+/* start meet */
+.container .meet .meet-title {
+  padding: 0.5rem;
+}
+.container .meet .meet-title h1 {
+  font-family: var(--lora-font);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.container .meet .meet-title h2 {
+  font-size: 0.8rem;
+  color: gray;
+  font-family: var(--lora-font);
+  width: 50%;
+}
+.container .meet .view-the-complete button {
+  background-color: var(--background-button);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+.meet .row-container {
+  margin-top: 5rem;
+}
+.card {
+  border: none;
+  overflow: hidden;
+}
+.card::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background: var(--background-button);
+  bottom: -100%;
+  right: -100%;
+  display: flex;
+  transition: 1s;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover:after {
+  bottom: 0%;
+  right: 0%;
+  cursor: pointer;
+}

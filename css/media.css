@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .navbar-collapse .navbar-nav {
+    position: inherit;
+  }
+  .container .home .home-dec h1{
+      font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 1000px) {
+}

@@ -1,5 +1,4 @@
 body {
-  min-height: 500em;
   background-color: #f7f7f7;
 }
 :root {
@@ -163,27 +162,5 @@ body > .container:nth-child(odd) {
 }
 .card {
   border: none;
-}
-/* start toolkit */
-.toolkit {
-  min-height: 50rem;
-  min-width: 100%;
-  position: relative;
-}
-.toolkit .one {
-  width: 50%;
-  height: 100%;
-  background-color: red;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.toolkit .two {
-  width: 50%;
-  height: 100%;
-  background-color: blue;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 /* end toolkit */

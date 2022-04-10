@@ -1,4 +1,4 @@
-let nav_link = document.querySelectorAll(".nav-link");
+let nav_link = document.querySelectorAll("#nav-link");
 
 function removeClass() {
   for (i = 0; i < nav_link.length; ++i) {

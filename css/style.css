@@ -9,6 +9,17 @@ body {
   --main-color: #007674;
   --background-button: #e4f1f1;
 }
+/* dark mode */
+.dark-mode{
+  background:black;
+  color: white;
+}
+.dark-mode-card{
+  background: #333;
+}
+#moon{
+  user-select: none;
+}
 *,
 *::after,
 *::before {
@@ -19,7 +30,7 @@ body {
   -webkit-box-sizing: border-box;
 }
 body > .container:nth-child(odd) {
-  background: #f8fbfb;
+  /* background: #f8fbfb; */
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -48,10 +59,10 @@ body > .container:nth-child(odd) {
 .navbar {
   background-color: #fff !important;
 }
-.navbar-collapse .navbar-nav {
+/* .navbar-collapse .navbar-nav {
   position: absolute;
   right: 1% !important;
-}
+} */
 .nav-link {
   text-transform: capitalize !important;
   font-weight: 400;
@@ -84,10 +95,6 @@ body > .container:nth-child(odd) {
 .container .home {
   position: relative;
   min-height: 50rem;
-  background-image: url("../img/pexels-tima-miroshnichenko-7046718.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .container .home .home-dec {
   width: 25rem;
@@ -98,18 +105,29 @@ body > .container:nth-child(odd) {
 }
 .container .home .home-dec h1 {
   font-size: 2rem;
-  font-family: var(--Roboto-font);
+  font-family: var(--lora-font);
   font-weight: 700;
   margin: 1rem 0;
-  color: #fff;
 }
 .container .home .home-dec h2:nth-child(1) {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--main-color);
 }
 .container .home .home-dec h2 {
   font-size: 0.8rem;
-  color: #fff;
+  color: gray;
+}
+.home .home-img {
+  position: absolute;
+  width: 30%;
+  height: 30rem;
+  background: url("../img/pexels-tima-miroshnichenko-7046718.jpg")
+    var(--main-color) no-repeat center;
+  background-size: cover;
+  right: 0;
+  top: 10rem;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
 }
 /* end home */
 /* start meet */
@@ -138,32 +156,34 @@ body > .container:nth-child(odd) {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 3%;
+  gap: 1rem;
 }
 .meet .row-container {
   margin-top: 5rem;
 }
 .card {
   border: none;
-  overflow: hidden;
 }
-.card::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f061";
+/* start toolkit */
+.toolkit {
+  min-height: 50rem;
+  min-width: 100%;
+  position: relative;
+}
+.toolkit .one {
+  width: 50%;
+  height: 100%;
+  background-color: red;
   position: absolute;
-  width: 3rem;
-  height: 3rem;
-  background: var(--background-button);
-  bottom: -100%;
-  right: -100%;
-  display: flex;
-  transition: 1s;
-  justify-content: center;
-  align-items: center;
+  right: 0;
+  top: 0;
 }
-.card:hover:after {
-  bottom: 0%;
-  right: 0%;
-  cursor: pointer;
+.toolkit .two {
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
+/* end toolkit */

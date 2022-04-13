@@ -1,44 +1,40 @@
 @media only screen and (max-width: 600px) {
   .container .home {
     min-height: 40rem;
-    background: url("../img/pexels-tima-miroshnichenko-7046718.jpg") var(--main-color) no-repeat center;
+    background: url("../img/pexels-tima-miroshnichenko-7046718.jpg")
+      var(--main-color) no-repeat center;
     background-size: cover;
   }
-  .container .home .home-dec{
+  .container .home .home-dec {
     width: 80%;
     color: #fff;
   }
-  .container .home .home-dec h1{
-      font-size: 1.5rem;
+  .container .home .home-dec h1 {
+    font-size: 1.5rem;
   }
-  .container .home .home-dec h2{
+  .container .home .home-dec h2 {
     color: #fff;
   }
-  .container .home .home-dec h2:nth-child(1){
+  .container .home .home-dec h2:nth-child(1) {
     font-size: 1rem;
-    color: #fff;
   }
-  .container .home .home-img{
+  .container .home .home-img {
     display: none;
-  }
-  /* start meet  */
-  .container .meet .meet-title{
-    text-align: center;
-  }
-  .container .meet .meet-title h2{
-    width: 100%;
-  }
-  .container .meet .view-the-complete{
-    text-align: center;
   }
 }
 @media only screen and (min-width: 600px) {
-  .container .home .home-dec{
-    width: 50%;
+  .container .home .home-dec {
+    width: 40%;
     left: 0;
   }
-  .container .home .home-img{
-    width: 25rem;
+  .container .home .home-dec h1 {
+    font-size: 1rem;
+  }
+  .container .home .home-dec h2:nth-child(1) {
+    font-size: 0.9rem;
+  }
+  .container .home .home-img {
+    width: 20rem;
   }
 }
 @media only screen and (min-width: 1000px) {

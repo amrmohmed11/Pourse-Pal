@@ -9,14 +9,14 @@ body {
   --background-button: #e4f1f1;
 }
 /* dark mode */
-.dark-mode{
-  background:black;
+.dark-mode {
+  background: black;
   color: white;
 }
-.dark-mode-card{
+.dark-mode-card {
   background: #333;
 }
-#moon{
+#moon {
   user-select: none;
 }
 *,
@@ -120,7 +120,7 @@ body > .container:nth-child(odd) {
   position: absolute;
   width: 30%;
   height: 30rem;
-  background: url("../img/pexels-tima-miroshnichenko-7046718.jpg")
+  background: url("../img/pexels-tima-miroshnichenko-7046718.webp")
     var(--main-color) no-repeat center;
   background-size: cover;
   right: 0;
@@ -163,4 +163,3 @@ body > .container:nth-child(odd) {
 .card {
   border: none;
 }
-/* end toolkit */
